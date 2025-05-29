@@ -35,3 +35,18 @@ out/
 
 ### VS Code ###
 .vscode/
+# Archivos de IntelliJ
+.idea/
+*.iml
+
+# Compilación
+/target/
+
+# Base de datos en memoria H2 (por si acaso)
+/*.h2.db
+
+# Configuración del sistema
+*.log
+.DS_Store
+*.class
+
