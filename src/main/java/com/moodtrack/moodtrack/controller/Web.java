@@ -1,6 +1,5 @@
 package com.moodtrack.moodtrack.controller;
 
-
 import com.moodtrack.moodtrack.model.MoodEntry;
 import com.moodtrack.moodtrack.repository.MoodEntryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,50 +12,41 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@Controller // Le dice a Spring que esta clase es un controlador web
+@Controller
 public class Web {
 
     @Autowired
-    private MoodEntryRepository moodEntryRepository;
+    private MoodEntryRepository repository;
 
-    // Página de inicio
     @GetMapping("/")
     public String index() {
         return "index";
     }
 
-    // Mostrar el formulario para registrar emoción
     @GetMapping("/form")
     public String showForm(Model model) {
         model.addAttribute("moodEntry", new MoodEntry());
         return "form";
     }
 
-    // Guardar la emoción enviada desde el formulario
     @PostMapping("/form")
     public String submitForm(@ModelAttribute MoodEntry moodEntry) {
         moodEntry.setFecha(LocalDate.now());
-        moodEntryRepository.save(moodEntry);
+        repository.save(moodEntry);
         return "redirect:/list";
     }
 
-    // Mostrar historial de emociones
     @GetMapping("/list")
     public String showList(Model model) {
-        List<MoodEntry> lista = moodEntryRepository.findAll();
-        model.addAttribute("moodList", lista);
+        model.addAttribute("moodList", repository.findAll());
         return "list";
     }
 
-    // Mostrar estadísticas de emociones
     @GetMapping("/stats")
     public String showStats(Model model) {
-        List<MoodEntry> lista = moodEntryRepository.findAll();
-
-        // Agrupar emociones y contarlas
-        Map<String, Long> resumen = lista.stream()
+        List<MoodEntry> entradas = repository.findAll();
+        Map<String, Long> resumen = entradas.stream()
                 .collect(Collectors.groupingBy(MoodEntry::getEmocion, Collectors.counting()));
-
         model.addAttribute("stats", resumen);
         return "stats";
     }

@@ -5,6 +5,7 @@ package com.moodtrack.moodtrack.model;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 
+
 @Entity // Marca esta clase como una tabla en la base de datos
 public class MoodEntry {
 

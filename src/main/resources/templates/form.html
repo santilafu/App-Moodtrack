@@ -6,8 +6,9 @@
 <body>
 <h1>Registrar emoción de hoy</h1>
 <form th:action="@{/form}" th:object="${moodEntry}" method="post">
+  // LA emocion para que sea un campo obligatorio le pondremos el atributo required
   <label>Emoción:</label>
-  <input type="text" th:field="*{emocion}" /><br><br>
+  <input type="text" th:field="*{emocion}" required /><br><br>
 
   <label>Nota:</label><br>
   <textarea th:field="*{nota}"></textarea><br><br>
