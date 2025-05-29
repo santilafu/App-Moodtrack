@@ -64,17 +64,17 @@ El logo moderno que he elegido aparece en la cabecera de cada página y también
 ## 📸 Capturas
 
 ### Inicio:
-![Inicio](img/Inicio.png)
+![Inicio](capturas/Inicio.png)
 
 ### Registro de emoción:
 
-![Formulario](img/Formulario.png)
+![Formulario](capturas/Formulario.png)
 
 ### Historial:
-![Historial](img/Historial.png)
+![Historial](capturas/Historial.png)
 
 ### Estadísticas:
-![Estadísticas](img/Estadistica.png)
+![Estadísticas](capturas/Estadistica.png)
 
 *(📌 Las capturas deben guardarse en `/static/img/` o enlazarse externamente si se sube a GitHub.)*
 
