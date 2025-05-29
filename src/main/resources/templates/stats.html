@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Estadísticas</title>
+</head>
+<body>
+<h1>Resumen de emociones</h1>
+<ul>
+    <li th:each="stat : ${stats}">
+        <span th:text="${stat.key}"></span>: <span th:text="${stat.value}"></span> veces
+    </li>
+</ul>
+</body>
+</html>

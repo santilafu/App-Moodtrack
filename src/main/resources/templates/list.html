@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Historial</title>
+</head>
+<body>
+<h1>Historial de emociones</h1>
+<table border="1">
+    <tr>
+        <th>Fecha</th>
+        <th>Emoción</th>
+        <th>Nota</th>
+    </tr>
+    <tr th:each="entry : ${moodList}">
+        <td th:text="${entry.fecha}"></td>
+        <td th:text="${entry.emocion}"></td>
+        <td th:text="${entry.nota}"></td>
+    </tr>
+</table>
+</body>
+</html>
