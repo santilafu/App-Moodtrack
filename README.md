@@ -18,7 +18,7 @@ Este proyecto está hecho paso a paso, sin complicaciones técnicas innecesarias
 
 ## 🛠️ Tecnologías utilizadas
 
-- **Java 17**
+- **Java 24**
 - **Spring Boot**
 - **Thymeleaf** (motor de plantillas HTML)
 - **H2 Database** (base de datos en memoria)
