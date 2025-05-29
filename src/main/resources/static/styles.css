@@ -1,27 +1,58 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    padding: 20px;
+    background-color: #f0f2f5;
     margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 h1 {
+    text-align: center;
     color: #333;
 }
 
-a, button {
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button, a.button {
+    display: inline-block;
+    text-align: center;
     background-color: #1976d2;
     color: white;
-    padding: 10px 15px;
-    margin: 10px 0;
+    padding: 10px 20px;
+    margin-top: 15px;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
 }
 
-a:hover, button:hover {
-    background-color: #1565c0;
+button:hover, a.button:hover {
+    background-color: #125ca1;
 }
 
 table {
@@ -30,20 +61,17 @@ table {
     margin-top: 20px;
 }
 
-table, th, td {
-    border: 1px solid #ccc;
-}
-
 th, td {
-    padding: 10px;
+    border: 1px solid #ccc;
+    padding: 12px;
     text-align: left;
 }
 
-textarea, input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav a {
+    margin: 0 10px;
 }

@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <title>Historial de Emociones</title>
     <link rel="stylesheet" th:href="@{/styles.css}">
-    <title>Historial</title>
 </head>
 <body>
-<h1>Historial de emociones</h1>
-<table border="1">
-    <tr>
-        <th>Fecha</th>
-        <th>Emoción</th>
-        <th>Nota</th>
-    </tr>
-    <tr th:each="entry : ${moodList}">
-        <td th:text="${entry.fecha}"></td>
-        <td th:text="${entry.emocion}"></td>
-        <td th:text="${entry.nota}"></td>
-    </tr>
-</table>
-<a th:href="@{/}">← Volver al inicio</a>
-<a th:href="@{/form}">+ Nueva emoción</a>
+<div class="container">
+    <h1>Historial de emociones</h1>
+    <table>
+        <tr>
+            <th>Fecha</th>
+            <th>Emoción</th>
+            <th>Nota</th>
+        </tr>
+        <tr th:each="entry : ${moodList}">
+            <td th:text="${entry.fecha}"></td>
+            <td th:text="${entry.emocion}"></td>
+            <td th:text="${entry.nota}"></td>
+        </tr>
+    </table>
+    <div class="nav">
+        <a th:href="@{/}" class="button">← Volver al inicio</a>
+        <a th:href="@{/form}" class="button">+ Nueva emoción</a>
+    </div>
+</div>
 </body>
 </html>

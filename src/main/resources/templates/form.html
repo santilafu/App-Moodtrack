@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <link rel="stylesheet" th:href="@{/styles.css}">
   <title>Registrar Emoción</title>
+  <link rel="stylesheet" th:href="@{/styles.css}">
 </head>
 <body>
-<h1>Registrar emoción de hoy</h1>
-<form th:action="@{/form}" th:object="${moodEntry}" method="post">
-  // LA emocion para que sea un campo obligatorio le pondremos el atributo required
-  <label>Emoción:</label>
-  <input type="text" th:field="*{emocion}" required /><br><br>
+<div class="container">
+  <h1>Registrar emoción</h1>
+  <form th:action="@{/form}" th:object="${moodEntry}" method="post">
+    <label>Emoción:</label>
+    <input type="text" th:field="*{emocion}" required />
 
-  <label>Nota:</label><br>
-  <textarea th:field="*{nota}"></textarea><br><br>
+    <label>Nota:</label>
+    <textarea th:field="*{nota}"></textarea>
 
-  <button type="submit">Guardar</button>
-</form>
-<a th:href="@{/}">← Volver al inicio</a>
+    <button type="submit">Guardar</button>
+  </form>
+  <div class="nav">
+    <a th:href="@{/}" class="button">← Volver al inicio</a>
+  </div>
+</div>
 </body>
 </html>

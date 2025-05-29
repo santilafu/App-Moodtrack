@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <title>MoodTrack - Inicio</title>
     <link rel="stylesheet" th:href="@{/styles.css}">
-    <title>MoodTrack</title>
 </head>
 <body>
-<h1>Bienvenido a MoodTrack</h1>
-<ul>
-    <li><a th:href="@{/form}">Registrar emoción</a></li>
-    <li><a th:href="@{/list}">Ver historial</a></li>
-    <li><a th:href="@{/stats}">Ver estadísticas</a></li>
-</ul>
+<div class="container">
+    <h1>Bienvenido a MoodTrack</h1>
+    <div class="nav">
+        <a th:href="@{/form}" class="button">Registrar emoción</a>
+        <a th:href="@{/list}" class="button">Ver historial</a>
+        <a th:href="@{/stats}" class="button">Ver estadísticas</a>
+    </div>
+</div>
 </body>
 </html>
