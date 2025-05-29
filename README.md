@@ -76,7 +76,6 @@ El logo moderno que he elegido aparece en la cabecera de cada página y también
 ### Estadísticas:
 ![Estadísticas](capturas/Estadistica.png)
 
-*(📌 Las capturas deben guardarse en `/static/img/` o enlazarse externamente si se sube a GitHub.)*
 
 ---
 
@@ -84,4 +83,21 @@ El logo moderno que he elegido aparece en la cabecera de cada página y también
 
 1. Abre el proyecto con IntelliJ IDEA
 2. Ejecuta la clase `MoodtrackApplication.java`
-3. Abre tu navegador y entra en:
+3. Abre tu navegador y entra en: `http://localhost:8080`
+4. Disfruta de la experiencia registrando tus emociones
+
+---
+
+## ✅ Validaciones y facilidad de uso
+
+Para mantenerlo simple, he usado validaciones básicas con `required` en HTML.  
+Así me aseguro de que no se puede guardar una emoción vacía, sin complicar el codigo.
+
+---
+
+
+## ✍️ Autor
+
+Desarrollado por **Santiago Lafuente Hernández**  
+Estudiante de 1º de Desarrollo de Aplicaciones Multiplataforma  
+Proyecto intermodular – Curso 2024/2025 - Aula Campus
