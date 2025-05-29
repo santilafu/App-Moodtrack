@@ -1,4 +1,35 @@
-## Estructura del proyecto
+# MoodTrack 😄
+
+Hola, soy **Santiago Lafuente Hernández** y este es mi proyecto intermodular de 1º de DAM.  
+He creado **MoodTrack**, una aplicación web sencilla pero útil, pensada para registrar mis emociones del día, dejar notas personales, consultar el historial y ver un pequeño resumen gráfico.
+
+Este proyecto está hecho paso a paso, sin complicaciones técnicas innecesarias, y con una estructura clara que he entendido y construido desde cero.
+
+---
+
+## 🚀 ¿Qué hace MoodTrack?
+
+- Me permite **registrar cómo me siento** cada día con una palabra (alegre, triste, motivado, etc.)
+- Puedo **añadir una nota opcional** explicando el motivo
+- Veo un **historial completo** de mis emociones anteriores
+- Y tengo una página de **estadísticas** con cuántas veces me he sentido de cada forma
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **Java 17**
+- **Spring Boot**
+- **Thymeleaf** (motor de plantillas HTML)
+- **H2 Database** (base de datos en memoria)
+- **Gradle**
+- **IntelliJ IDEA**
+- **HTML + CSS**
+
+---
+
+## 🧱 Estructura del proyecto
+
 Este proyecto está organizado de la siguiente manera:
 
 ```src/
@@ -20,3 +51,37 @@ Este proyecto está organizado de la siguiente manera:
         │   └── stats.html
         └── application.properties
 ```
+
+---
+
+## 🎨 Diseño visual
+
+MoodTrack tiene un diseño **limpio y centrado**, con botones azules suaves y márgenes cómodos.  
+El logo moderno que he elegido aparece en la cabecera de cada página y también como favicon en el navegador.
+
+---
+
+## 📸 Capturas
+
+### Inicio:
+![Inicio](img/Inicio.png)
+
+### Registro de emoción:
+
+![Formulario](img/Formulario.png)
+
+### Historial:
+![Historial](img/Historial.png)
+
+### Estadísticas:
+![Estadísticas](img/Estadistica.png)
+
+*(📌 Las capturas deben guardarse en `/static/img/` o enlazarse externamente si se sube a GitHub.)*
+
+---
+
+## 🧪 Cómo usarlo
+
+1. Abre el proyecto con IntelliJ IDEA
+2. Ejecuta la clase `MoodtrackApplication.java`
+3. Abre tu navegador y entra en:
