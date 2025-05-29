@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" th:href="@{/styles.css}">
     <title>Historial</title>
 </head>
 <body>
@@ -17,5 +18,7 @@
         <td th:text="${entry.nota}"></td>
     </tr>
 </table>
+<a th:href="@{/}">← Volver al inicio</a>
+<a th:href="@{/form}">+ Nueva emoción</a>
 </body>
 </html>

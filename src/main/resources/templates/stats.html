@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" th:href="@{/styles.css}">
     <title>Estadísticas</title>
 </head>
 <body>
@@ -10,5 +11,6 @@
         <span th:text="${stat.key}"></span>: <span th:text="${stat.value}"></span> veces
     </li>
 </ul>
+<a th:href="@{/}">← Volver al inicio</a>
 </body>
 </html>
